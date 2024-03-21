@@ -1,4 +1,8 @@
 .navbar {
+  @apply w-full bg-blue-100;
+}
+
+.navbar__container {
   @apply w-[85%] mx-auto py-[2rem] flex items-center justify-between;
 }
 
@@ -19,5 +23,5 @@
 }
 
 .navbar-right > ul > li {
-  @apply text-[2.2rem] font-[500] text-gray-400 hover:text-red-500 cursor-pointer;
+  @apply text-[2.2rem] font-[500] text-black hover:text-red-500 cursor-pointer;
 }
