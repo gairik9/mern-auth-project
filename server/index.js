@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 // Initialize  environment variables.
 dotenv.config();
 
+// DB  Connection.
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => {
@@ -14,9 +15,13 @@ mongoose
     console.log(error);
   });
 
+// Setup PORT Numbers.
 const PORT = process.env.PORT_NUMBER || 3000;
+
+// Setup Server.
 const app = express();
 
+// Run The Server.
 app.listen(PORT, () => {
   console.log(`Server Running On PORT : ${PORT}.`);
 });
