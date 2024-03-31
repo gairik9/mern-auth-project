@@ -20,7 +20,7 @@
 }
 
 .login__form > button {
-  @apply bg-black text-[#FFF] font-[600] text-[2rem] rounded-[0.5rem] border-none py-[1rem] hover:scale-[105%] transition-all ease-in-out duration-500;
+  @apply uppercase bg-black text-[#FFF] font-[600] text-[2rem] rounded-[0.5rem] border-none py-[1rem] hover:scale-[105%] transition-all ease-in-out duration-500;
 }
 
 .login__notMember {
@@ -57,7 +57,7 @@
 }
 
 .register__form > button {
-  @apply bg-black text-[#FFF] font-[600] text-[2rem] rounded-[0.5rem] border-none py-[1rem] hover:scale-[105%] transition-all ease-in-out duration-500;
+  @apply uppercase bg-black text-[#FFF] font-[600] text-[2rem] rounded-[0.5rem] border-none py-[1rem] hover:scale-[105%] transition-all ease-in-out duration-500;
 }
 
 .register__alreadyMember {
@@ -70,4 +70,8 @@
 
 .register__alreadyMember > p span {
   @apply ml-[1rem] font-[600] text-[1.8rem] text-blue-500;
+}
+
+.register__error {
+  @apply text-red-500 font-semibold mt-[1.5rem] text-[1.8rem];
 }
